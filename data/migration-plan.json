@@ -1,0 +1,46 @@
+{
+  "sourceFile": "/Users/sooryagangaraj/Documents/Kian/KianWebApp/kian-webapp/constants/blog.ts",
+  "categories": [
+    {
+      "id": 1,
+      "name": "News & Updates",
+      "slug": "news-and-updates",
+      "description": "Articles related to News & Updates"
+    },
+    {
+      "id": 2,
+      "name": "Design",
+      "slug": "design",
+      "description": "Articles related to Design"
+    },
+    {
+      "id": 3,
+      "name": "Development",
+      "slug": "development",
+      "description": "Articles related to Development"
+    },
+    {
+      "id": 4,
+      "name": "Marketing",
+      "slug": "marketing",
+      "description": "Articles related to Marketing"
+    }
+  ],
+  "articlesCount": 23,
+  "migrationSteps": [
+    "Update Strapi content types (✅ Done)",
+    "Create category entries in Strapi",
+    "Extract individual article data",
+    "Upload featured images to Strapi media library",
+    "Create article entries in Strapi",
+    "Update frontend to use Strapi API",
+    "Test data integrity"
+  ],
+  "notes": [
+    "Articles contain markdown content that needs to be preserved",
+    "Featured images need to be uploaded to Strapi media library",
+    "Slugs must be unique and match existing URLs",
+    "Published dates need to be converted to ISO format",
+    "Tags are stored as arrays and need proper handling"
+  ]
+}

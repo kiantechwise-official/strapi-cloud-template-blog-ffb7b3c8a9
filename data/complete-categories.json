@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "News & Updates",
+    "slug": "news-and-updates",
+    "description": "Articles related to News & Updates"
+  },
+  {
+    "id": 2,
+    "name": "Design",
+    "slug": "design",
+    "description": "Articles related to Design"
+  },
+  {
+    "id": 3,
+    "name": "Development",
+    "slug": "development",
+    "description": "Articles related to Development"
+  },
+  {
+    "id": 4,
+    "name": "Marketing",
+    "slug": "marketing",
+    "description": "Articles related to Marketing"
+  }
+]

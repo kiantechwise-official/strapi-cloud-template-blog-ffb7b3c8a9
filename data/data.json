@@ -1,64 +1,55 @@
 {
   "global": {
-    "siteName": "Strapi Blog",
+    "siteName": "Future Frames | Kiantechwise",
     "defaultSeo": {
-      "metaTitle": "Page",
-      "metaDescription": "A blog made with Strapi",
+      "metaTitle": "Future Frames | Kiantechwise",
+      "metaDescription": "Stay ahead of the curve with our curated collection of articles covering the latest in technology news, design trends, development innovations, and marketing updates.",
       "shareImage": null
     },
-    "siteDescription": "A Blog made with Strapi",
+    "siteDescription": "Future Frames - Technology insights and trends by Kiantechwise",
     "favicon": null
   },
   "about": {
-    "title": "About the strapi blog",
+    "title": "About Future Frames",
     "blocks": [
       {
         "__component": "shared.quote",
-        "title": "Thelonius Monk",
-        "body": "You've got to dig it to dig it, you dig?"
+        "title": "Kiantechwise",
+        "body": "Stay ahead of the curve with insights that matter."
       },
       {
         "__component": "shared.rich-text",
-        "body": "## Dedit imago conspicuus cum capillis totidem inhibere\n\nLorem markdownum **rerum**, est limine: columbas: ab infelix hostem arbore nudis\ncrudelis. Videtur reliquit ambo ferrum dote sub amne fatis **illuc**, in magis,\nnec."
-      },
-      {
-        "__component": "shared.media",
-        "file": "coffee-art.jpg"
+        "body": "## Future Frames\n\nFuture Frames is your gateway to the latest trends in technology, design, development, and marketing. We curate insights that help you stay ahead in the rapidly evolving digital landscape."
       }
     ]
   },
   "categories": [
     {
-      "name": "news",
-      "slug": "news"
+      "name": "News & Updates",
+      "slug": "news-updates",
+      "description": "Latest technology news and platform updates"
     },
     {
-      "name": "tech",
-      "slug": "tech"
+      "name": "Design",
+      "slug": "design",
+      "description": "Design trends, UI/UX insights, and creative inspiration"
     },
     {
-      "name": "food",
-      "slug": "food"
+      "name": "Development",
+      "slug": "development",
+      "description": "Web development trends, frameworks, and technical insights"
     },
     {
-      "name": "nature",
-      "slug": "nature"
-    },
-    {
-      "name": "story",
-      "slug": "story"
+      "name": "Marketing",
+      "slug": "marketing",
+      "description": "Digital marketing trends, automation, and strategy insights"
     }
   ],
   "authors": [
     {
-      "name": "David Doe",
-      "email": "daviddoe@strapi.io",
-      "avatar": "daviddoe@strapi.io.jpg"
-    },
-    {
-      "name": "Sarah Baker",
-      "email": "sarahbaker@strapi.io",
-      "avatar": "sarahbaker@strapi.io.jpg"
+      "name": "Kiantechwise Team",
+      "email": "team@kiantechwise.com",
+      "avatar": null
     }
   ],
   "articles": [

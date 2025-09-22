@@ -4,8 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article",
-    "description": "Create your blog content"
+    "displayName": "Future Frames Article",
+    "description": "Create your Future Frames blog content"
   },
   "options": {
     "draftAndPublish": true
@@ -13,27 +13,40 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
-    "description": {
+    "excerpt": {
       "type": "text",
-      "maxLength": 80
+      "required": true,
+      "maxLength": 500
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
-    "cover": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "featuredImage": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": ["images"]
     },
     "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
+      "type": "string",
+      "required": false
+    },
+    "publishedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "readTime": {
+      "type": "integer",
+      "required": false
     },
     "category": {
       "type": "relation",
@@ -41,9 +54,9 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    "tags": {
+      "type": "json",
+      "required": false
     }
   }
 }

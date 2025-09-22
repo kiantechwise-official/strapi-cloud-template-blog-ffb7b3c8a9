@@ -4,8 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category",
-    "description": "Organize your content into categories"
+    "displayName": "Future Frames Category",
+    "description": "Organize your Future Frames content into categories"
   },
   "options": {
     "draftAndPublish": false
@@ -13,10 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     },
     "articles": {
       "type": "relation",
@@ -25,7 +29,8 @@
       "mappedBy": "category"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": false
     }
   }
 }

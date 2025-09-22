@@ -8,6 +8,13 @@
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
+    "extract:data": "node ./scripts/extract-articles-json.js",
+    "extract:complete": "node ./scripts/extract-complete-data.js",
+    "create:seed": "node ./scripts/create-full-seed.js",
+    "migrate:data": "node ./scripts/simple-seed.js",
+    "seed:complete": "node ./scripts/seed-complete.js",
+    "seed:auto": "node ./scripts/auto-seed.js",
+    "setup": "./scripts/complete-setup.sh",
     "start": "strapi start",
     "strapi": "strapi"
   },
