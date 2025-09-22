@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_categories",
+  "info": {
+    "singularName": "industry-category",
+    "pluralName": "industry-categories",
+    "displayName": "Industry Category",
+    "description": "Organize your industry content into categories"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-article.industry-article",
+      "mappedBy": "category"
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

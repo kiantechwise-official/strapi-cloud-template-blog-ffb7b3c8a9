@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_articles",
+  "info": {
+    "singularName": "industry-article",
+    "pluralName": "industry-articles",
+    "displayName": "Industry Article",
+    "description": "Create your industry insights and analysis content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "author": {
+      "type": "string",
+      "required": false
+    },
+    "publishedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "readTime": {
+      "type": "integer",
+      "required": false
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::industry-category.industry-category",
+      "inversedBy": "articles"
+    },
+    "tags": {
+      "type": "json",
+      "required": false
+    }
+  }
+}

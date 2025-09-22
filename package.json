@@ -14,6 +14,7 @@
     "migrate:data": "node ./scripts/simple-seed.js",
     "seed:complete": "node ./scripts/seed-complete.js",
     "seed:auto": "node ./scripts/auto-seed.js",
+    "seed:industries": "node ./scripts/seed-industries.js",
     "setup": "./scripts/complete-setup.sh",
     "start": "strapi start",
     "strapi": "strapi"
